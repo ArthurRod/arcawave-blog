@@ -12,13 +12,13 @@ interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const {title, description, image = "/blog-placeholder-1.jpg"} = Astro.props;
+const {title, description, image = "/png/og-logo.png"} = Astro.props;
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="/ico/favicon.ico" type="image/x-icon" />
 <link rel="sitemap" href="/sitemap-index.xml" />
 <link
   rel="alternate"
@@ -31,49 +31,7 @@ const {title, description, image = "/blog-placeholder-1.jpg"} = Astro.props;
 <!-- Font preloads -->
 <link
   rel="preload"
-  href="/fonts/BDOGrotesk-Light.ttf"
-  as="font"
-  type="font/ttf"
-  crossorigin
-/>
-<link
-  rel="preload"
   href="/fonts/BDOGrotesk-Regular.ttf"
-  as="font"
-  type="font/ttf"
-  crossorigin
-/>
-<link
-  rel="preload"
-  href="/fonts/BDOGrotesk-Medium.ttf"
-  as="font"
-  type="font/ttf"
-  crossorigin
-/>
-<link
-  rel="preload"
-  href="/fonts/BDOGrotesk-DemiBold.ttf"
-  as="font"
-  type="font/ttf"
-  crossorigin
-/>
-<link
-  rel="preload"
-  href="/fonts/BDOGrotesk-Bold.ttf"
-  as="font"
-  type="font/ttf"
-  crossorigin
-/>
-<link
-  rel="preload"
-  href="/fonts/BDOGrotesk-ExtraBold.ttf"
-  as="font"
-  type="font/ttf"
-  crossorigin
-/>
-<link
-  rel="preload"
-  href="/fonts/BDOGrotesk-Black.ttf"
   as="font"
   type="font/ttf"
   crossorigin

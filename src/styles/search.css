@@ -1,0 +1,40 @@
+.search ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.search ul li {
+  width: calc(50% - 1rem);
+}
+.search ul li * {
+  text-decoration: none;
+}
+.search ul li img {
+  margin-bottom: 0.5rem;
+  border-radius: 12px;
+  transition: all ease-in-out 0.3s;
+}
+.search .title {
+  margin: 0;
+  color: rgb(var(--black));
+  line-height: 1;
+}
+.search .date {
+  margin: 0;
+  color: rgb(var(--gray));
+}
+.search ul a:hover img {
+  box-shadow: var(--box-shadow);
+}
+@media (max-width: 720px) {
+  .search ul {
+    gap: 1rem;
+  }
+  .search ul li {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -5,64 +5,64 @@
  */
 
 :root {
-  --primary: 24, 208, 193;
-  --secondary: 13, 102, 97;
-  --black: 15, 14, 14;
-  --gray: 192, 192, 192;
+  --black: #0f0e0e;
+  --primary: #18d0c1;
+  --secondary: #0d6661;
+  --white: #ffffff;
+  --gray: #c0c0c0;
 
   --accent: #2337ff;
-  --gray: 96, 115, 159;
   --gray-light: 229, 233, 240;
   --gray-dark: 34, 41, 57;
-  --gray-gradient: rgba(var(--gray-light), 50%), #fff;
+  --gray-gradient: rgba(var(--gray-light), 50%), var(--white);
   --box-shadow: 0 2px 6px rgba(0, 0, 0, 15%), 0 8px 24px rgba(var(--gray), 33%),
     0 16px 32px rgba(var(--gray), 33%);
 }
 @font-face {
   font-family: "Grotesk";
-  src: url("/fonts/BDOGrotesk-Light.ttf") format("ttf");
+  src: url("/fonts/BDOGrotesk-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Grotesk";
-  src: url("/fonts/BDOGrotesk-Regular.ttf") format("ttf");
+  src: url("/fonts/BDOGrotesk-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Grotesk";
-  src: url("/fonts/BDOGrotesk-Medium.ttf") format("ttf");
+  src: url("/fonts/BDOGrotesk-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Grotesk";
-  src: url("/fonts/BDOGrotesk-DemiBold.ttf") format("ttf");
+  src: url("/fonts/BDOGrotesk-DemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Grotesk";
-  src: url("/fonts/BDOGrotesk-Bold.ttf") format("ttf");
+  src: url("/fonts/BDOGrotesk-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Grotesk";
-  src: url("/fonts/BDOGrotesk-ExtraBold.ttf") format("ttf");
+  src: url("/fonts/BDOGrotesk-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Grotesk";
-  src: url("/fonts/BDOGrotesk-Black.ttf") format("ttf");
+  src: url("/fonts/BDOGrotesk-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -74,16 +74,27 @@ body {
   font-family: "Grotesk", sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
   text-align: left;
   background: linear-gradient(var(--gray-gradient)) no-repeat;
   background-size: 100% 600px;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  font-weight: 400;
   color: rgb(var(--gray-dark));
   font-size: 16px;
   line-height: 1.7;
+  min-height: 100vh;
+}
+header :focus-visible,
+footer :focus-visible {
+  outline-color: var(--primary);
+  outline-style: solid;
+  outline-width: 2px;
 }
 main {
+  flex: 1;
   padding: 2rem 0px;
 }
 h1,
@@ -141,7 +152,6 @@ table {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
 }
 code {
   padding: 2px 5px;
@@ -182,6 +192,12 @@ hr {
   /* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
   white-space: nowrap;
 }
+.desktop {
+  display: none;
+}
+.mobile {
+  display: block;
+}
 .container {
   width: 960px;
   max-width: 100%;
@@ -194,5 +210,13 @@ hr {
   }
   .container {
     width: 100%;
+  }
+}
+@media (min-width: 960px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
   }
 }
