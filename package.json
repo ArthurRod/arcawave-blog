@@ -17,5 +17,8 @@
     "fuse.js": "^7.1.0",
     "svelte": "^5.33.1",
     "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
