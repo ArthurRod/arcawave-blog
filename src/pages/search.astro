@@ -1,18 +1,17 @@
 ---
-import {getCollection} from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import {SITE_DESCRIPTION, SITE_TITLE} from "../consts";
+import {SEARCH_TITLE, SITE_DESCRIPTION} from "../consts";
 
-import "../styles/search.css";
 import SearchPosts from "../components/SearchPosts.astro";
+import "../styles/search.css";
 ---
 
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={SEARCH_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
     <Header />

@@ -23,7 +23,7 @@
 
     if (posts.length > 0) {
       fuse = new Fuse(posts, {
-        keys: ["data.title", "data.description"],
+        keys: ["data.title", "data.description", "data.author", "data.tags"],
         minMatchCharLength: 2,
         includeMatches: true,
         threshold: 0.3,

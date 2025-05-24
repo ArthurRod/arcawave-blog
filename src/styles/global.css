@@ -104,20 +104,20 @@ h4,
 h5,
 h6 {
   margin: 0 0 0.5rem 0;
-  color: rgb(var(--black));
+  color: var(--black);
   line-height: 1.2;
 }
 h1 {
-  font-size: 3.052em;
+  font-size: 2.5em;
 }
 h2 {
-  font-size: 2.441em;
+  font-size: 2em;
 }
 h3 {
-  font-size: 1.953em;
+  font-size: 1.8em;
 }
 h4 {
-  font-size: 1.563em;
+  font-size: 1.5em;
 }
 h5 {
   font-size: 1.25em;
@@ -127,11 +127,11 @@ b {
   font-weight: 700;
 }
 a {
-  color: rgb(var(--black));
+  color: var(--black);
   transition: color ease-in-out 0.3s;
 }
 a:hover {
-  color: rgb(var(--black));
+  color: var(--black);
 }
 p {
   margin-bottom: 1em;
@@ -204,6 +204,26 @@ hr {
   padding: 0px 1rem;
   margin: auto;
 }
+.btn-primary {
+  border-radius: 0.75rem;
+  background-color: var(--black);
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: var(--white);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  animation-duration: 0.3s;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.btn-primary:focus {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 @media (max-width: 720px) {
   body {
     font-size: 18px;

@@ -4,3 +4,7 @@
 export const SITE_TITLE = "ArcaWave | Blog";
 export const SITE_DESCRIPTION =
   "Arthur Rodrigues compartilha tutoriais, dicas e experiências do seu dia a dia como desenvolvedor, criando soluções e aprendendo com cada projeto. Venha aprender com quem vive o código na prática!";
+
+export const SEARCH_TITLE = "🔍 Sua busca";
+
+export const NOT_FOUND_TITLE = "Página não encontrada | ArcaWave";

@@ -1,0 +1,36 @@
+.not-found .content {
+  max-width: 42rem;
+  text-align: center;
+  margin: 0px auto;
+}
+.not-found .code-wrapper {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.not-found .code-wrapper .code-shadow {
+  font-size: 8rem;
+  font-weight: 700;
+  opacity: 0.1;
+}
+.not-found .code-wrapper .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+}
+.not-found .code-wrapper .code {
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+.not-found h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.not-found p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+}
