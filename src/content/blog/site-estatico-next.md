@@ -3,7 +3,7 @@ title: "🚀 Como gerar um site estático com Next.js e evitar problemas com ima
 description: "Aprenda a configurar seu Next.js para gerar páginas estáticas e evitar erros comuns com imagens ao usar a tag <Image />."
 pubDate: "May 24 2025"
 author: "Arthur Rodrigues"
-tags: "ArcaWave, DevOps, Next.js, Build, Deploy"
+tags: "ArcaWave, blog arca wave, blog, blog arca, blog arcawave, DevOps, Next.js, Build, Deploy"
 heroImage: "/jpg/not-found.jpg"
 ---
 
