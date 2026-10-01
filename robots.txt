@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://blog.arcawave.tech/sitemap-index.xml

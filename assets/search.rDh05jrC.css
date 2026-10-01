@@ -1,0 +1,1 @@
+.loading.svelte-1agn1hi{display:flex;justify-content:center;width:100%}.spinner.svelte-1agn1hi{width:var(--size);height:var(--size);border:4px solid transparent;border-top-color:#000;border-radius:50%;animation:svelte-1agn1hi-spin 1s linear infinite}@keyframes svelte-1agn1hi-spin{to{transform:rotate(360deg)}}
